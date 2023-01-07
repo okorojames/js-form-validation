@@ -17,18 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // validatEmptyFields(userName, email);
-  function validatFields(user, email, passord, confirmPass, mobile) {
-    if ( !user || !email || !passord || !confirmPass || !mobile ) {
+  function validatFields(user, email, password, confirmPass, mobile) {
+    if ( !user || !email || !password || !confirmPass || !mobile ) {
       errorMsg.textContent = "Not Valid details";
-      setTimeout(()=>{errorMsg.textContent = ""}, 3000)
+      setTimeout(() => { errorMsg.textContent = "" }, 3000)
+      form.reset()
       return;
     }
-    if (!passRegex.test(passord)) {
+    if (!passRegex.test(password)) {
       errorMsg.textContent = "werey password no match ooo";
       setTimeout(()=>{errorMsg.textContent = ""}, 3000)
       return;
     }
-    if (passord !== confirmPass) {
+    if (password !== confirmPass) {
       errorMsg.textContent = "Password do not match";
       setTimeout(()=>{errorMsg.textContent = ""}, 3000)
       return;
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       password.type = 'password'
     }
   })
+  form.reset()
 });
 
 
