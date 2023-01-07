@@ -8,13 +8,20 @@
   </head>
   <body>
     <section id="form-section">
+      <p class="error"></p>
       <form>
-        <input type="text" placeholder="username" /><br />
-        <input type="email" placeholder="email" /><br />
-        <input type="number" placeholder="mobile" /><br />
-        <input type="password" placeholder="password" /><br />
-        <button class="sign-in-btn">Sign In</button>
+        <input type="text" placeholder="username" class="user" /><br />
+        <input type="email" class="email" placeholder="email" /><br />
+        <input type="number" class="mobile" placeholder="mobile" /><br />
+        <input type="password" class="password" placeholder="password" /><br />
+        <input
+          type="password"
+          class="confirmPass"
+          placeholder="confirm password"
+        /><br />
+        <input class="sign-in-btn" value="Sign In" type="submit" />
       </form>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>

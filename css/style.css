@@ -26,7 +26,10 @@ body #form-section form {
   text-align: center;
   width: 100%;
 }
-body #form-section form input {
+body #form-section form input[type=text],
+body #form-section form input[type=email],
+body #form-section form input[type=number],
+body #form-section form input[type=password] {
   margin-bottom: 3rem;
   padding: 1.5rem 1.2rem 1.5rem 0.5rem;
   border-radius: 1rem;
@@ -55,4 +58,9 @@ input:hover,
 input {
   border: none;
   outline: none;
+}
+
+.error {
+  color: red;
+  font-family: sans-serif;
 }/*# sourceMappingURL=style.css.map */
