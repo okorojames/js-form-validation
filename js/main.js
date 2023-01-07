@@ -39,4 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
   }
+  document.querySelector(".checkPass").addEventListener("change", function () {
+    if (this.checked) {
+      password.type = 'text'
+    } else {
+      password.type = 'password'
+    }
+  })
 });
+
+
+
