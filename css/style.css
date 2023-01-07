@@ -39,6 +39,14 @@ body #form-section form .sign-in-btn {
   font-size: 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  color: #0c3256;
+  font-weight: 500;
+}
+body #form-section form .sign-in-btn:hover, body #form-section form .sign-in-btn:active {
+  box-shadow: 0 0 0 0.12rem #d1e0ee;
+  background: transparent;
+  color: #d1e0ee;
 }
 
 input:active,
