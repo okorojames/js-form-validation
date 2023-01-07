@@ -3,6 +3,11 @@ $light-one: #d1e0ee;
 $light-two: #74a2cd;
 $light-three: #0c3256;
 $light-four: #135089;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -19,15 +24,21 @@ body {
     max-width: 38rem;
     border-radius: 2rem;
     & form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
+      text-align: center;
+      width: 100%;
       & input {
-        border: none;
-        padding: 1rem 0 1rem 0.5rem;
+        margin-bottom: 3rem;
+        padding: 1.5rem 1.2rem 1.5rem 0.5rem;
         border-radius: 1rem;
+        width: 70%;
+      }
+      & .sign-in-btn {
+        border: none;
+        outline: none;
+        padding: 1.5rem 2.3rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        cursor: pointer;
       }
     }
   }
